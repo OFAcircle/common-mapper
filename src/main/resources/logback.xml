@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="myout1" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>[%p] [施主莫慌!bug总能解决的][%d{yyyy-MM-dd HH:mm:ss}] %m %n</pattern>
+        </layout>
+
+    <appender name="myout2" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>[%p] [施主莫慌!bug总能解决的][%d{yyyy-MM-dd HH:mm:ss}] %m %n</pattern>
+        </layout>
+    </appender>
+    <root level="error">
+        <appender-ref ref="myout1"/>
+    </root>
+    <logger name="com.baizhi.mapper" level="DEBUG"/>
+</configuration>
